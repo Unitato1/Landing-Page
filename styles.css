@@ -6,9 +6,11 @@
 li {
   list-style: none;
 }
-body {
+body,
+html {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 body > * {
   padding-left: 20%;
@@ -45,12 +47,105 @@ body > * {
 .owner {
   max-height: 500px;
   max-width: 250px;
-  flex: 1 1 auto;
+  flex: 1 0 0;
   border-radius: 50%;
   border: whitesmoke 2px solid;
 }
 .name {
   font-size: 48px;
   font-weight: 900;
+  color: #f9faf8;
+}
+.section-two {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 24px;
+}
+.images {
+  display: flex;
+  gap: 20px;
+}
+.images > div {
+  min-height: 200px;
+  max-height: 300px;
+  flex: 1 0 auto;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images > div > div {
+  flex: auto;
+  width: 200px;
+  border-radius: 15%;
+  border: #1f2937 2px solid;
+}
+
+.header-two {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+  padding: 24px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.section-three {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+}
+.quote,
+.author {
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
+}
+
+.author {
+  font-weight: 900;
+  align-self: flex-end;
+}
+.section-four {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.action {
+  color: #f9faf8;
+}
+.four {
+  align-items: center;
+  padding: 24px 15% 24px 15%;
+  border-radius: 5px;
+  background-color: #3882f6;
+  display: flex;
+  justify-content: space-between;
+}
+.sign-up {
+  color: #f9faf8;
+  background-color: #3882f6;
+  padding: 4px 24px;
+  margin: 0;
+  border-radius: 8px;
+  border: 0;
+}
+.down {
+  border: #f9faf8 2px solid;
+}
+footer {
+  background-color: #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
   color: #f9faf8;
 }
